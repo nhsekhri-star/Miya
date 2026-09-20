@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mya Hijabs | Luxury Modest Wear & Instant Magnetic Hijabs Canada</title>
+  <meta name="description" content="Discover Mya Hijabs Canada. Premium Bamboo Radiance, Lightweight Printed Modal, and 3-in-1 Instant Chiffon with Built-In Magnets. Fast 1-2 day GTA shipping and local pickup.">
+  <link rel="icon" type="image/png" href="assets/cdn/shop/files/betterRHlogo.png">
+
+  <!-- Design System & Styles -->
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+
+  <!-- ==========================================================================
+       ANNOUNCEMENT BANNER TICKER
+       ========================================================================== -->
+  <div class="announcement-bar" role="region" aria-label="Store Announcement">
+    <div class="marquee-track">
+      <div class="marquee-item">
+        <span>✨ USE CODE <span class="highlight">MYADIS15</span> FOR 15% OFF AT CHECKOUT</span>
+        <span class="marquee-separator">•</span>
+        <span>🍁 FREE SHIPPING IN GTA ON $70+ ORDERS</span>
+        <span class="marquee-separator">•</span>
+        <span>⚡ FAST 1–2 BUSINESS DAY SHIPPING ACROSS CANADA</span>
+        <span class="marquee-separator">•</span>
+        <span>🧲 JUST DROPPED: 3-IN-1 INSTANT CHIFFON WITH BUILT-IN MAGNETS</span>
+        <span class="marquee-separator">•</span>
+        <span>📍 FREE LOCAL PICKUP IN MISSISSAUGA</span>
+        <span class="marquee-separator">•</span>
+      </div>
+      <!-- Duplicate for seamless infinite loop -->
+      <div class="marquee-item">
+        <span>✨ USE CODE <span class="highlight">MYADIS15</span> FOR 15% OFF AT CHECKOUT</span>
+        <span class="marquee-separator">•</span>
+        <span>🍁 FREE SHIPPING IN GTA ON $70+ ORDERS</span>
+        <span class="marquee-separator">•</span>
+        <span>⚡ FAST 1–2 BUSINESS DAY SHIPPING ACROSS CANADA</span>
+        <span class="marquee-separator">•</span>
+        <span>🧲 JUST DROPPED: 3-IN-1 INSTANT CHIFFON WITH BUILT-IN MAGNETS</span>
+        <span class="marquee-separator">•</span>
+        <span>📍 FREE LOCAL PICKUP IN MISSISSAUGA</span>
+        <span class="marquee-separator">•</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       MAIN NAVIGATION HEADER
+       ========================================================================== -->
+  <header class="site-header" id="site-header">
+    <div class="container">
+      <div class="header-inner">
+        
+        <!-- Brand / Logo -->
+        <a href="#hero" class="header-brand" aria-label="Mya Hijabs Home">
+          <img src="assets/cdn/shop/files/betterRHlogo.png" alt="Mya Hijabs Logo" class="brand-logo-img" width="52" height="52">
+          <div class="brand-text">
+            <span class="brand-name">Mya Hijabs</span>
+            <span class="brand-sub">Canada • Modest Wear</span>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation Links -->
+        <nav class="header-nav" aria-label="Primary Navigation">
+          <ul class="nav-links">
+            <li><a href="#shop-catalog" class="nav-link active">Shop All</a></li>
+            <li><a href="javascript:void(0)" onclick="window.MyaApp.filterCategory('instant-chiffon')" class="nav-link">Instant Hijabs</a></li>
+            <li><a href="javascript:void(0)" onclick="window.MyaApp.filterCategory('printed-modal')" class="nav-link">Printed Modal</a></li>
+            <li><a href="javascript:void(0)" onclick="window.MyaApp.filterCategory('bamboo-jersey')" class="nav-link">Bamboo Radiance</a></li>
+            <li><a href="javascript:void(0)" onclick="window.MyaApp.filterCategory('prayer-sets')" class="nav-link">Prayer Sets</a></li>
+            <li><a href="#drape-guide" class="nav-link">Fabric Guide</a></li>
+            <li><a href="#reviews" class="nav-link">Reviews</a></li>
+          </ul>
+        </nav>
+
+        <!-- Right Header Actions -->
+        <div class="header-actions">
+          
+          <!-- Currency Selector -->
+          <div class="currency-select-wrap">
+            <label for="currency-selector" style="margin-right: 4px;">🌐</label>
+            <select id="currency-selector" aria-label="Select Currency">
+              <option value="CAD">CAD $</option>
+              <option value="USD">USD $</option>
+            </select>
+          </div>
+
+          <!-- Wishlist Counter Action -->
+          <button class="action-btn" id="wishlist-btn" title="Saved Wishlist" onclick="window.MyaApp.filterCategory('all')">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+            </svg>
+            <span class="badge-count" id="wishlist-count-badge">0</span>
+          </button>
+
+          <!-- Cart Drawer Toggle -->
+          <button class="action-btn" id="cart-toggle-btn" title="Open Shopping Bag">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+              <line x1="3" y1="6" x2="21" y2="6"></line>
+              <path d="M16 10a4 4 0 0 1-8 0"></path>
+            </svg>
+            <span class="badge-count cart-badge-count">1</span>
+          </button>
+
+          <!-- Mobile Menu Trigger -->
+          <button class="action-btn mobile-menu-btn" id="mobile-menu-btn" title="Open Menu">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <line x1="3" y1="12" x2="21" y2="12"></line>
+              <line x1="3" y1="6" x2="21" y2="6"></line>
+              <line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
+          </button>
+
+        </div>
+
+      </div>
+    </div>
+  </header>
+
+  <!-- ==========================================================================
+       HERO SHOWCASE SECTION
+       ========================================================================== -->
+  <section class="hero-section" id="hero">
+    <div class="container">
+      <div class="hero-grid">
+        
+        <!-- Left: Text & CTA -->
+        <div class="hero-content">
+          <div class="hero-tag">
+            <span class="dot"></span>
+            Handcrafted Modest Elegance • Mississauga, Canada
+          </div>
+
+          <h1 class="hero-title">
+            The Perfect Hijab for <em>Every Moment.</em>
+          </h1>
+
+          <p class="hero-description">
+            Experience the softest premium modal, silky breathable bamboo jersey, and our revolutionary <strong>3-in-1 Instant Chiffon with Built-In Magnets</strong>. Designed for all-day comfort, effortless drape, and timeless elegance.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="#shop-catalog" class="btn-primary">
+              <span>Explore Collection</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+
+            <button class="btn-secondary" onclick="window.MyaApp.filterCategory('instant-chiffon')">
+              <span>Shop Instant Magnets</span>
+              <span style="font-size: 1.1rem;">🧲</span>
+            </button>
+          </div>
+
+          <!-- Quick Stats / Social Proof -->
+          <div class="hero-stats">
+            <div class="stat-item">
+              <span class="stat-number">4.9 ★</span>
+              <span class="stat-label">Customer Rating</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number">1–2 Days</span>
+              <span class="stat-label">Fast Canadian Shipping</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number">100%</span>
+              <span class="stat-label">Premium Quality Guarantee</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Showcase Visual Card -->
+        <div class="hero-media-wrapper">
+          <div class="hero-main-card">
+            <img src="assets/cdn/shop/files/minimalist_24_x_18_in_cc60a435-a64c-4cd2-ace8-b1a2bee8ebbb.png" 
+                 alt="Mya Hijabs Luxury Modest Wear Collection" 
+                 class="hero-img">
+
+            <!-- Floating Pill -->
+            <div class="floating-product-pill">
+              <div class="pill-info">
+                <span class="pill-title">Rose Marble Modal Hijab</span>
+                <span class="pill-price">$25.00 CAD • Best Seller</span>
+              </div>
+              <button class="pill-badge" onclick="window.MyaApp.openQuickView('rose-marble-printed-hijab-modal')">
+                Quick View
+              </button>
+            </div>
+          </div>
+
+          <!-- Floating Badge -->
+          <div class="floating-accent-badge">
+            <span>Canada's</span>
+            <span style="font-size: 0.95rem; font-weight: 800;">#1</span>
+            <span>Choice</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       VALUE PROPOSITION STRIP
+       ========================================================================== -->
+  <section class="features-section" aria-label="Store Benefits">
+    <div class="container">
+      <div class="features-grid">
+        
+        <div class="feature-box">
+          <div class="feature-icon-wrap">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="1" y="3" width="15" height="13"></rect>
+              <polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon>
+              <circle cx="5.5" cy="18.5" r="2.5"></circle>
+              <circle cx="18.5" cy="18.5" r="2.5"></circle>
+            </svg>
+          </div>
+          <div class="feature-content">
+            <h4>Fast 1-2 Day GTA Delivery</h4>
+            <p>Free GTA delivery on orders $70+</p>
+          </div>
+        </div>
+
+        <div class="feature-box">
+          <div class="feature-icon-wrap">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+            </svg>
+          </div>
+          <div class="feature-content">
+            <h4>Built-In Magnet Innovation</h4>
+            <p>No pins needed, effortless 3-in-1 secure drape</p>
+          </div>
+        </div>
+
+        <div class="feature-box">
+          <div class="feature-icon-wrap">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+            </svg>
+          </div>
+          <div class="feature-content">
+            <h4>Organic Breathable Fabrics</h4>
+            <p>100% Bamboo Jersey and non-slip modal</p>
+          </div>
+        </div>
+
+        <div class="feature-box">
+          <div class="feature-icon-wrap">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+              <circle cx="12" cy="10" r="3"></circle>
+            </svg>
+          </div>
+          <div class="feature-content">
+            <h4>Mississauga Pickup</h4>
+            <p>Ready in 24h at Stainton Drive</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       CATALOG FILTER & PRODUCTS GRID
+       ========================================================================== -->
+  <section class="catalog-section" id="shop-catalog">
+    <div class="container">
+      
+      <div class="section-head">
+        <span class="section-subtitle">Curated Modest Collection</span>
+        <h2 class="section-title">Discover Your Signature Drape</h2>
+        <p class="section-desc">
+          Browse our complete handcrafted boutique collection. Select any category to filter, or search for your favorite shades and fabric blends.
+        </p>
+      </div>
+
+      <!-- Filter Toolbar -->
+      <div class="filter-toolbar">
+        
+        <!-- Category Filter Pills -->
+        <div class="category-pills-scroll" role="tablist">
+          <button class="filter-pill active" data-category="all" role="tab">All Hijabs (62)</button>
+          <button class="filter-pill" data-category="instant-chiffon" role="tab">🧲 Instant Magnets</button>
+          <button class="filter-pill" data-category="printed-modal" role="tab">Printed Modal</button>
+          <button class="filter-pill" data-category="ombre-modal" role="tab">Ombre Modal</button>
+          <button class="filter-pill" data-category="premium-modal" role="tab">Premium Modal</button>
+          <button class="filter-pill" data-category="bamboo-jersey" role="tab">Bamboo Radiance</button>
+          <button class="filter-pill" data-category="premium-jersey" role="tab">Premium Jersey</button>
+          <button class="filter-pill" data-category="prayer-sets" role="tab">Prayer Sets</button>
+          <button class="filter-pill" data-category="undercaps" role="tab">AirTie Undercaps</button>
+          <button class="filter-pill" data-category="satin-silk" role="tab">Satin & Silk</button>
+        </div>
+
+        <!-- Search & Sort Controls -->
+        <div class="filter-right-controls">
+          
+          <!-- Live Instant Search -->
+          <div class="catalog-search-wrap">
+            <span class="search-icon-inside">🔍</span>
+            <input type="text" id="catalog-search-input" class="catalog-search-input" placeholder="Search hijabs..." aria-label="Search Hijabs">
+          </div>
+
+          <!-- Sort Select -->
+          <div class="sort-select-wrap">
+            <label for="sort-select">Sort:</label>
+            <select id="sort-select" class="sort-select">
+              <option value="featured">Featured</option>
+              <option value="price-asc">Price: Low to High</option>
+              <option value="price-desc">Price: High to Low</option>
+              <option value="rating">Top Customer Rated</option>
+              <option value="title">Alphabetical</option>
+            </select>
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- Dynamic Product Cards Grid -->
+      <div class="product-grid" id="product-grid" aria-live="polite">
+        <!-- Rendered dynamically by scripts/app.js from 62 real products -->
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       THE MYA DRAPE GUIDE / FABRIC COMPARISON
+       ========================================================================== -->
+  <section class="drape-guide-section" id="drape-guide">
+    <div class="container">
+      
+      <div class="section-head">
+        <span class="section-subtitle">Fabric Mastery</span>
+        <h2 class="section-title">The Mya Drape & Fabric Guide</h2>
+        <p class="section-desc">
+          Not sure which fabric suits your lifestyle? Explore the tactile qualities, breathability, and structure of our three signature textile families.
+        </p>
+      </div>
+
+      <div class="fabric-grid">
+        
+        <!-- Fabric 1: Instant Chiffon with Magnets -->
+        <div class="fabric-card">
+          <span class="fabric-badge">Revolutionary Ease</span>
+          <h3 class="fabric-title">3-in-1 Instant Chiffon</h3>
+          <p class="fabric-desc">
+            Engineered for effortless 30-second styling. Features a pre-sewn matching undercap and concealed micro-magnets that hold perfectly in place without single pin.
+          </p>
+          <ul class="fabric-attributes">
+            <li><span class="attr-label">Pins Required:</span> <span class="attr-value">Zero (Built-in Magnets)</span></li>
+            <li><span class="attr-label">Opacity:</span> <span class="attr-value">100% Full Coverage</span></li>
+            <li><span class="attr-label">Weight:</span> <span class="attr-value">Airy & Featherweight</span></li>
+            <li><span class="attr-label">Best For:</span> <span class="attr-value">Busy Mornings & Travel</span></li>
+          </ul>
+        </div>
+
+        <!-- Fabric 2: Premium Bamboo Jersey -->
+        <div class="fabric-card">
+          <span class="fabric-badge">Eco Luxury</span>
+          <h3 class="fabric-title">Bamboo Radiance Jersey</h3>
+          <p class="fabric-desc">
+            Sourced from sustainably harvested organic bamboo fibers. Naturally thermo-regulating, anti-bacterial, and cloud-soft with a generous four-way stretch.
+          </p>
+          <ul class="fabric-attributes">
+            <li><span class="attr-label">Touch & Feel:</span> <span class="attr-value">Buttery Cloud-Soft</span></li>
+            <li><span class="attr-label">Breathability:</span> <span class="attr-value">Ultra High Thermo-Cool</span></li>
+            <li><span class="attr-label">Stretch:</span> <span class="attr-value">4-Way Adaptive Elasticity</span></li>
+            <li><span class="attr-label">Best For:</span> <span class="attr-value">Daily Comfort & All-Season</span></li>
+          </ul>
+        </div>
+
+        <!-- Fabric 3: Lightweight Printed Modal -->
+        <div class="fabric-card">
+          <span class="fabric-badge">Artisanal Drape</span>
+          <h3 class="fabric-title">Printed & Ombre Modal</h3>
+          <p class="fabric-desc">
+            Crafted from high-grade natural beechwood cellulose. Showcases exquisite watercolor and marble motifs with a fluid, liquid drape that stays put without slipping.
+          </p>
+          <ul class="fabric-attributes">
+            <li><span class="attr-label">Drape Quality:</span> <span class="attr-value">Liquid Silk Elegance</span></li>
+            <li><span class="attr-label">Texture:</span> <span class="attr-value">Smooth Non-Slip Matte</span></li>
+            <li><span class="attr-label">Finishes:</span> <span class="attr-value">Artistic Marble & Ombre</span></li>
+            <li><span class="attr-label">Best For:</span> <span class="attr-value">Events & Statement Style</span></li>
+          </ul>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       CUSTOMER REVIEWS & SOCIAL PROOF
+       ========================================================================== -->
+  <section class="reviews-section" id="reviews">
+    <div class="container">
+      
+      <div class="section-head">
+        <span class="section-subtitle">Verified Feedback</span>
+        <h2 class="section-title">Loved by Muslimahs Across Canada</h2>
+        <p class="section-desc">
+          Real experiences from sisters who trust Mya Hijabs for daily wear, special occasions, and effortless modesty.
+        </p>
+      </div>
+
+      <!-- Rating Bar -->
+      <div class="reviews-summary-bar">
+        <div class="summary-score">
+          <span class="summary-big-num">4.9</span>
+          <div class="summary-meta">
+            <div class="star-icons" style="font-size: 1.2rem;">★★★★★</div>
+            <span style="font-size: 0.85rem; color: var(--color-muted);">Based on 2,400+ Verified Canadian Reviews</span>
+          </div>
+        </div>
+        <div class="verified-pill">
+          <span>✓</span> 100% Verified Boutique Customers
+        </div>
+      </div>
+
+      <!-- Testimonial Cards -->
+      <div class="testimonials-grid">
+        
+        <div class="testimonial-card">
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-text">
+            "The 3-in-1 instant chiffon with magnets is a complete game changer! No more poked pins or looking for undercaps that match. I put it on in 15 seconds and it stayed flawless all day."
+          </p>
+          <div class="testimonial-author">
+            <span class="author-name">Fatima Z.</span>
+            <span class="author-loc">Mississauga, ON</span>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-text">
+            "The Rose Marble Modal is simply gorgeous. The blush-to-terracotta gradient looks so high-end in person. Received so many compliments at Eid! Fast shipping too."
+          </p>
+          <div class="testimonial-author">
+            <span class="author-name">Amina K.</span>
+            <span class="author-loc">Toronto, ON</span>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-text">
+            "The Bamboo Radiance jersey feels like silk clouds on your hair. It’s lightweight, doesn’t give me headaches, and keeps me cool during warm summer days. Highly recommend!"
+          </p>
+          <div class="testimonial-author">
+            <span class="author-name">Mariam S.</span>
+            <span class="author-loc">Oakville, ON</span>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       COMMUNITY GALLERY (REAL LOOKBOOK IMAGES)
+       ========================================================================== -->
+  <section class="community-section" aria-label="Community Style Showcase">
+    <div class="container">
+      <div class="section-head">
+        <span class="section-subtitle">#MyaHijabsCommunity</span>
+        <h2 class="section-title">Modest Styling In Motion</h2>
+      </div>
+
+      <div class="community-grid">
+        <div class="community-card">
+          <img src="assets/cdn/shop/files/Rose-Marble-printed-hijab-premium-modal-profile.jpg" alt="Rose Marble Modal" class="community-img" loading="lazy">
+          <div class="community-overlay"><span>@myahijabs</span></div>
+        </div>
+        <div class="community-card">
+          <img src="assets/cdn/shop/files/myahijabs-printed-modal-hijab-purple-watercolor1.png" alt="Purple Harmony Watercolor" class="community-img" loading="lazy">
+          <div class="community-overlay"><span>@myahijabs</span></div>
+        </div>
+        <div class="community-card">
+          <img src="assets/cdn/shop/files/Light_beige_instant_chiffon_hijab_with_built_in_magnets_and_sewn_matching_undercap_for_easy_modest_wear.jpg" alt="Instant Chiffon Drape" class="community-img" loading="lazy">
+          <div class="community-overlay"><span>@myahijabs</span></div>
+        </div>
+        <div class="community-card">
+          <img src="assets/cdn/shop/files/Ombre_Premium_Modal_Canada_Mississauga_5.jpg" alt="Ombre Modal Caramel" class="community-img" loading="lazy">
+          <div class="community-overlay"><span>@myahijabs</span></div>
+        </div>
+        <div class="community-card">
+          <img src="assets/cdn/shop/files/Front_view_of_the_instant_chiffon_hijab_showing_smooth_drape_and_natural_flow_with_built_in_magnets_and_attached_undercap_for_effortless_wear..jpg" alt="Instant Black Chiffon" class="community-img" loading="lazy">
+          <div class="community-overlay"><span>@myahijabs</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       VIP NEWSLETTER SECTION
+       ========================================================================== -->
+  <section class="newsletter-section">
+    <div class="container">
+      <div class="newsletter-card">
+        <span class="section-subtitle">Exclusive Privileges</span>
+        <h3>Join the Mya VIP Circle</h3>
+        <p>Subscribe to receive early access to new drops, secret restocks, and receive an instant 15% discount code today.</p>
+
+        <form class="newsletter-form" onsubmit="return false;">
+          <input type="email" id="newsletter-email-input" class="newsletter-input" placeholder="Enter your email address..." required>
+          <button type="submit" id="newsletter-submit-btn" class="btn-primary">Unlock 15% Off</button>
+        </form>
+
+        <div id="newsletter-reward-box" class="newsletter-reward-box"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       FOOTER
+       ========================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        
+        <div class="footer-col">
+          <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 16px;">
+            <img src="assets/cdn/shop/files/betterRHlogo.png" alt="Mya Hijabs" style="width: 44px; height: 44px; border-radius: 50%; border: 1px solid rgba(255,255,255,0.2);">
+            <h5 style="margin: 0;">Mya Hijabs</h5>
+          </div>
+          <p>
+            Based in Mississauga, Ontario, Mya Hijabs offers the perfect hijab for every moment. Explore our luxurious collection of jersey, bamboo, and instant magnetic hijabs crafted for comfortable elegance.
+          </p>
+          <p style="margin-top: 14px; font-weight: 600; color: var(--color-gold-light);">
+            📍 Pickup: 830 Stainton Drive, Mississauga ON L5C 2Z3
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h5>Collections</h5>
+          <ul class="footer-links">
+            <li><a href="javascript:void(0)" onclick="window.MyaApp.filterCategory('instant-chiffon')">Instant Chiffon Magnets</a></li>
+            <li><a href="javascript:void(0)" onclick="window.MyaApp.filterCategory('printed-modal')">Lightweight Printed Modal</a></li>
+            <li><a href="javascript:void(0)" onclick="window.MyaApp.filterCategory('bamboo-jersey')">Bamboo Radiance Jersey</a></li>
+            <li><a href="javascript:void(0)" onclick="window.MyaApp.filterCategory('ombre-modal')">Ombre Modal Scarves</a></li>
+            <li><a href="javascript:void(0)" onclick="window.MyaApp.filterCategory('prayer-sets')">Girls & Women Prayer Sets</a></li>
+            <li><a href="javascript:void(0)" onclick="window.MyaApp.filterCategory('undercaps')">AirTie Undercaps</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h5>Customer Care</h5>
+          <ul class="footer-links">
+            <li><a href="#drape-guide">Fabric & Drape Guide</a></li>
+            <li><a href="javascript:void(0)" onclick="alert('Fast 1-2 day shipping across Canada. Free shipping in GTA on orders over $70 CAD.')">Shipping & Delivery Info</a></li>
+            <li><a href="javascript:void(0)" onclick="alert('Local pickup is available at 830 Stainton Drive, Mississauga. Ready within 24 hours.')">Local Pickup Policy</a></li>
+            <li><a href="javascript:void(0)" onclick="alert('We gladly accept returns of unworn, unwashed items in original packaging within 14 days.')">Returns & Exchanges</a></li>
+            <li><a href="#reviews">Verified Customer Reviews</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h5>Connect & Follow</h5>
+          <p>Questions about sizing, color matching, or wholesale? We'd love to assist you.</p>
+          <p style="margin-top: 12px; color: #FFFFFF; font-weight: 600;">
+            ✉️ care@myahijabs.com
+          </p>
+          <div style="display: flex; gap: 12px; margin-top: 16px;">
+            <a href="https://instagram.com" target="_blank" rel="noopener" class="action-btn" style="background: rgba(255,255,255,0.1); color: #fff;">
+              📸
+            </a>
+            <a href="https://tiktok.com" target="_blank" rel="noopener" class="action-btn" style="background: rgba(255,255,255,0.1); color: #fff;">
+              🎵
+            </a>
+            <a href="https://facebook.com" target="_blank" rel="noopener" class="action-btn" style="background: rgba(255,255,255,0.1); color: #fff;">
+              👥
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          © 2026 Mya Hijabs Canada. All Rights Reserved. Modesty Defined.
+        </div>
+        <div class="payment-badges">
+          <span class="pay-tag">Visa</span>
+          <span class="pay-tag">Mastercard</span>
+          <span class="pay-tag">Apple Pay</span>
+          <span class="pay-tag">Google Pay</span>
+          <span class="pay-tag">Shop Pay</span>
+          <span class="pay-tag">Interac</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       SHOPPING BAG SLIDE-OVER DRAWER
+       ========================================================================== -->
+  <div class="drawer-backdrop" id="drawer-backdrop"></div>
+
+  <aside class="cart-drawer" id="cart-drawer" role="dialog" aria-modal="true" aria-label="Shopping Bag">
+    <div class="cart-header">
+      <h3>Your Shopping Bag (<span class="cart-badge-count">0</span>)</h3>
+      <button class="cart-close-btn" id="cart-close-btn" title="Close Bag">✕</button>
+    </div>
+
+    <!-- Free GTA Shipping Meter -->
+    <div class="shipping-meter-wrap">
+      <div class="shipping-meter-text" id="shipping-meter-text">
+        <span>Add <strong>$70.00 CAD</strong> for <strong>Free GTA Shipping</strong></span>
+      </div>
+      <div class="shipping-meter-bar">
+        <div class="shipping-meter-fill" id="shipping-meter-fill"></div>
+      </div>
+    </div>
+
+    <!-- Items List -->
+    <div class="cart-items-container" id="cart-items-container">
+      <!-- Generated dynamically -->
+    </div>
+
+    <!-- Empty State -->
+    <div class="cart-empty-view" id="cart-empty-view" style="display: none;">
+      <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+        <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+        <line x1="3" y1="6" x2="21" y2="6"></line>
+        <path d="M16 10a4 4 0 0 1-8 0"></path>
+      </svg>
+      <p style="font-weight: 600; font-size: 1.1rem; color: var(--color-dark);">Your bag is currently empty</p>
+      <p style="font-size: 0.88rem;">Explore our newest drops and instant hijabs to add items.</p>
+      <button class="btn-primary" onclick="window.MyaApp.filterCategory('all'); document.getElementById('cart-close-btn').click();">
+        Start Shopping
+      </button>
+    </div>
+
+    <!-- Cart Footer & Checkout -->
+    <div class="cart-footer">
+      
+      <!-- Promo Code Input -->
+      <div class="promo-code-box">
+        <input type="text" id="promo-input" class="promo-input" placeholder="Promo code (e.g. MYADIS15)">
+        <button id="promo-apply-btn" class="promo-btn">Apply</button>
+      </div>
+      <div id="promo-applied-tag" class="promo-applied-tag"></div>
+
+      <!-- Subtotal -->
+      <div class="cart-summary-line">
+        <span>Subtotal</span>
+        <span id="cart-subtotal" style="font-weight: 700; color: var(--color-dark);">$0.00 CAD</span>
+      </div>
+
+      <!-- Discount row -->
+      <div class="cart-summary-line" id="cart-discount-row" style="display: none; color: var(--color-sage);">
+        <span>VIP Discount (15%)</span>
+        <span id="cart-discount-amount">-$0.00</span>
+      </div>
+
+      <!-- Estimated Total -->
+      <div class="cart-summary-line total">
+        <span>Estimated Total</span>
+        <span id="cart-total">$0.00 CAD</span>
+      </div>
+
+      <!-- Checkout Button -->
+      <button class="btn-checkout" onclick="alert('Proceeding to secure checkout! In production, this forwards directly to your Shopify or Stripe checkout flow.')">
+        <span>Proceed to Checkout</span>
+        <span>🔒</span>
+      </button>
+
+      <div style="text-align: center; font-size: 0.76rem; color: var(--color-muted);">
+        Taxes and final shipping calculated at checkout.
+      </div>
+
+    </div>
+  </aside>
+
+  <!-- ==========================================================================
+       QUICK VIEW MODAL
+       ========================================================================== -->
+  <div class="modal-backdrop" id="quickview-modal" role="dialog" aria-modal="true" aria-label="Product Quick View">
+    <div class="quickview-dialog">
+      <button class="modal-close-btn" id="modal-close-btn" title="Close Modal">✕</button>
+      <div id="quickview-body" style="display: contents;">
+        <!-- Injected dynamically by scripts/app.js -->
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       MOBILE OFF-CANVAS NAVIGATION DRAWER
+       ========================================================================== -->
+  <aside class="cart-drawer" id="mobile-drawer" style="right: auto; left: 0; transform: translateX(-100%);" aria-label="Mobile Navigation">
+    <div class="cart-header">
+      <div style="display: flex; align-items: center; gap: 10px;">
+        <img src="assets/cdn/shop/files/betterRHlogo.png" alt="Mya Hijabs" style="width: 36px; height: 36px; border-radius: 50%;">
+        <span style="font-family: var(--font-serif); font-size: 1.3rem; font-weight: 700;">Mya Hijabs</span>
+      </div>
+      <button class="cart-close-btn" id="mobile-drawer-close" title="Close Menu">✕</button>
+    </div>
+
+    <div style="padding: 24px; display: flex; flex-direction: column; gap: 18px; font-size: 1.05rem; font-weight: 600;">
+      <a href="#shop-catalog" onclick="document.getElementById('mobile-drawer-close').click();">✨ All Hijabs (62)</a>
+      <a href="javascript:void(0)" onclick="window.MyaApp.filterCategory('instant-chiffon'); document.getElementById('mobile-drawer-close').click();">🧲 Instant Hijabs (Built-in Magnets)</a>
+      <a href="javascript:void(0)" onclick="window.MyaApp.filterCategory('printed-modal'); document.getElementById('mobile-drawer-close').click();">🌸 Lightweight Printed Modal</a>
+      <a href="javascript:void(0)" onclick="window.MyaApp.filterCategory('bamboo-jersey'); document.getElementById('mobile-drawer-close').click();">🌿 Bamboo Radiance Jersey</a>
+      <a href="javascript:void(0)" onclick="window.MyaApp.filterCategory('prayer-sets'); document.getElementById('mobile-drawer-close').click();">🤍 Prayer Sets</a>
+      <a href="javascript:void(0)" onclick="window.MyaApp.filterCategory('undercaps'); document.getElementById('mobile-drawer-close').click();">🎀 AirTie Undercaps</a>
+      <a href="#drape-guide" onclick="document.getElementById('mobile-drawer-close').click();">📖 Fabric & Drape Guide</a>
+      <a href="#reviews" onclick="document.getElementById('mobile-drawer-close').click();">★ Verified Reviews</a>
+    </div>
+
+    <div style="margin-top: auto; padding: 24px; border-top: 1px solid var(--color-border); background: var(--color-linen);">
+      <p style="font-size: 0.85rem; color: var(--color-muted); margin-bottom: 8px;">📍 Mississauga, Ontario, Canada</p>
+      <p style="font-size: 0.85rem; font-weight: 600; color: var(--color-espresso);">Free local pickup ready in 24h</p>
+    </div>
+  </aside>
+
+  <!-- ==========================================================================
+       TOAST NOTIFICATION CONTAINER
+       ========================================================================== -->
+  <div class="toast-container" id="toast-container"></div>
+
+  <!-- Scripts -->
+  <script src="scripts/products-data.js"></script>
+  <script src="scripts/app.js"></script>
+</body>
+</html>
