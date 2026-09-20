@@ -115,9 +115,63 @@
 
         </div>
 
+  </header>
+
+  <!-- ==========================================================================
+       MOBILE STORY HIGHLIGHTS (INSTAGRAM / E-COMMERCE STYLE)
+       ========================================================================== -->
+  <div class="mobile-stories-section" aria-label="Collection Stories">
+    <div class="mobile-stories-track">
+      <div class="story-circle-item" onclick="window.MyaApp.filterCategory('instant-chiffon')">
+        <div class="story-ring">
+          <img src="assets/cdn/shop/files/Light_beige_instant_chiffon_hijab_with_built_in_magnets_and_sewn_matching_undercap_for_easy_modest_wear_2.jpg" alt="Instant Magnets">
+        </div>
+        <span class="story-label">Instant Magnets</span>
+      </div>
+
+      <div class="story-circle-item" onclick="window.MyaApp.filterCategory('printed-modal')">
+        <div class="story-ring">
+          <img src="assets/cdn/shop/files/Rose-Marble-printed-hijab-premium-modal-profile.jpg" alt="Printed Modal">
+        </div>
+        <span class="story-label">Printed Modal</span>
+      </div>
+
+      <div class="story-circle-item" onclick="window.MyaApp.filterCategory('bamboo-jersey')">
+        <div class="story-ring">
+          <img src="assets/cdn/shop/files/2_3d0eaed7-f9b1-4cb9-9fba-0539502ecd1a.png" alt="Bamboo Radiance">
+        </div>
+        <span class="story-label">Bamboo Radiance</span>
+      </div>
+
+      <div class="story-circle-item" onclick="window.MyaApp.filterCategory('prayer-sets')">
+        <div class="story-ring">
+          <img src="assets/cdn/shop/files/06F261C4-D1E2-4460-9EBB-2792FEA19D3E.webp" alt="Prayer Sets">
+        </div>
+        <span class="story-label">Prayer Sets</span>
+      </div>
+
+      <div class="story-circle-item" onclick="window.MyaApp.filterCategory('ombre-modal')">
+        <div class="story-ring">
+          <img src="assets/cdn/shop/files/Ombre_Premium_Modal_Canada_Mississauga_5.jpg" alt="Ombre Modal">
+        </div>
+        <span class="story-label">Ombre Modal</span>
+      </div>
+
+      <div class="story-circle-item" onclick="window.MyaApp.filterCategory('undercaps')">
+        <div class="story-ring">
+          <img src="assets/cdn/shop/files/undercap_tie_back__beige.jpg" alt="Undercaps">
+        </div>
+        <span class="story-label">Undercaps</span>
+      </div>
+
+      <div class="story-circle-item" onclick="window.MyaApp.filterCategory('satin-silk')">
+        <div class="story-ring">
+          <img src="assets/cdn/shop/files/Front_view_of_the_instant_chiffon_hijab_showing_smooth_drape_and_natural_flow_with_built_in_magnets_and_attached_undercap_for_effortless_wear..jpg" alt="Satin & Silk">
+        </div>
+        <span class="story-label">Satin & Silk</span>
       </div>
     </div>
-  </header>
+  </div>
 
   <!-- ==========================================================================
        HERO SHOWCASE SECTION
@@ -722,6 +776,58 @@
       <p style="font-size: 0.85rem; font-weight: 600; color: var(--color-espresso);">Free local pickup ready in 24h</p>
     </div>
   </aside>
+
+  <!-- ==========================================================================
+       FLOATING GLASSMORPHIC MOBILE BOTTOM DOCK
+       ========================================================================== -->
+  <nav class="mobile-bottom-dock" aria-label="Mobile Navigation Dock">
+    <button class="dock-item active" onclick="window.scrollTo({top: 0, behavior: 'smooth'})" title="Home">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+        <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+        <polyline points="9 22 9 12 15 12 15 22"></polyline>
+      </svg>
+      <span>Home</span>
+    </button>
+    
+    <button class="dock-item" onclick="document.getElementById('shop-catalog').scrollIntoView({behavior: 'smooth'})" title="Shop All">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+        <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+        <line x1="8" y1="21" x2="16" y2="21"></line>
+        <line x1="12" y1="17" x2="12" y2="21"></line>
+      </svg>
+      <span>Shop</span>
+    </button>
+
+    <button class="dock-item" onclick="document.getElementById('catalog-search-input').focus(); document.getElementById('shop-catalog').scrollIntoView({behavior: 'smooth'})" title="Search">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+        <circle cx="11" cy="11" r="8"></circle>
+        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+      </svg>
+      <span>Search</span>
+    </button>
+
+    <button class="dock-item" onclick="window.MyaApp.filterCategory('all'); window.MyaApp.showWishlistToast()" title="Wishlist">
+      <div style="position: relative; display: inline-flex;">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+          <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+        </svg>
+        <span class="badge-count" id="dock-wishlist-count" style="top: -6px; right: -8px;">0</span>
+      </div>
+      <span>Wishlist</span>
+    </button>
+
+    <button class="dock-item" onclick="document.getElementById('cart-toggle-btn').click()" title="Shopping Bag">
+      <div style="position: relative; display: inline-flex;">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+          <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <path d="M16 10a4 4 0 0 1-8 0"></path>
+        </svg>
+        <span class="badge-count cart-badge-count" style="top: -6px; right: -8px;">1</span>
+      </div>
+      <span>Bag</span>
+    </button>
+  </nav>
 
   <!-- ==========================================================================
        TOAST NOTIFICATION CONTAINER

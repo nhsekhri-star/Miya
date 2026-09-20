@@ -103,8 +103,12 @@
   // --- Update Wishlist UI ---
   function updateWishlistUI() {
     const wishlistCountBadge = document.getElementById('wishlist-count-badge');
+    const dockWishlistCount = document.getElementById('dock-wishlist-count');
     if (wishlistCountBadge) {
       wishlistCountBadge.textContent = wishlist.size;
+    }
+    if (dockWishlistCount) {
+      dockWishlistCount.textContent = wishlist.size;
     }
     document.querySelectorAll('.card-wishlist-btn').forEach(btn => {
       const pid = btn.dataset.productId;
@@ -470,7 +474,10 @@
                 <span class="current-price">${formatPrice(product.price)}</span>
                 ${product.compareAtPrice ? `<span class="compare-price">${formatPrice(product.compareAtPrice)}</span>` : ''}
               </div>
-              <span class="color-swatch-indicator" style="background-color: ${product.colorHex};" title="Available Shade"></span>
+              <div style="display: flex; align-items: center; gap: 8px;">
+                <span class="color-swatch-indicator" style="background-color: ${product.colorHex};" title="Available Shade"></span>
+                <button class="card-touch-add-btn" onclick="event.stopPropagation(); window.MyaApp.quickAdd('${product.id}')" title="Quick Add to Bag">+</button>
+              </div>
             </div>
           </div>
         </article>
@@ -628,6 +635,11 @@
     switchQvImage: switchQvImage,
     toggleWishlist: toggleWishlist,
     resetFilters: resetFilters,
+    showWishlistToast: function() {
+      showToast(`Showing your ${wishlist.size} saved wishlist items`, '❤️');
+      const catSection = document.getElementById('shop-catalog');
+      if (catSection) catSection.scrollIntoView({ behavior: 'smooth' });
+    },
     filterCategory: function (cat) {
       categoryPills.forEach(pill => {
         if (pill.dataset.category === cat) pill.classList.add('active');
